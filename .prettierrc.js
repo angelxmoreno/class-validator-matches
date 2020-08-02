@@ -3,5 +3,6 @@ module.exports = {
     trailingComma: "all",
     singleQuote: true,
     useTabs: false,
-    tabWidth: 4
+    tabWidth: 4,
+    printWidth: 120
 };
