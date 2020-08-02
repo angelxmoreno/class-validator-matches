@@ -27,7 +27,6 @@ describe('Matches validation', () => {
 
         const form = new Form();
         const errors = validator.validateSync(form);
-        console.log('errors', errors);
         expect(errors.length).to.equal(1);
     });
 

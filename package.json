@@ -2,8 +2,10 @@
   "name": "class-validator-matches",
   "version": "0.0.0",
   "description": "Matches decorator for class-validator",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
