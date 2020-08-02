@@ -1,42 +1,46 @@
 {
-  "name": "class-validator-matches",
-  "version": "1.0.0",
-  "description": "Matches decorator for class-validator",
-  "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "mocha -r ts-node/register test/**/*.spec.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/angelxmoreno/class-validator-matches.git"
-  },
-  "author": "Angel S. Moreno <angelxmoreno@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/angelxmoreno/class-validator-matches/issues"
-  },
-  "homepage": "https://github.com/angelxmoreno/class-validator-matches#readme",
-  "peerDependencies": {
-    "class-validator": "^0.12.0"
-  },
-  "devDependencies": {
-    "@types/chai": "^4.2.12",
-    "@types/mocha": "^8.0.1",
-    "@typescript-eslint/eslint-plugin": "^3.7.1",
-    "@typescript-eslint/parser": "^3.7.1",
-    "chai": "^4.2.0",
-    "eslint": "^7.6.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "mocha": "^8.1.0",
-    "prettier": "^2.0.5",
-    "ts-node": "^8.10.2",
-    "typescript": "^3.9.7"
-  },
-  "dependencies": {
-    "class-validator": "^0.12.2"
-  }
+    "name": "class-validator-matches",
+    "version": "1.0.0",
+    "description": "Matches decorator for class-validator",
+    "main": "dist/index.js",
+    "types": "dist/types/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint --cache --ext=js,json,ts --fix-dry-run .",
+        "test": "nyc --reporter=html --reporter=text mocha",
+        "coverage": "nyc report --reporter=text-lcov | coveralls"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/angelxmoreno/class-validator-matches.git"
+    },
+    "author": "Angel S. Moreno <angelxmoreno@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/angelxmoreno/class-validator-matches/issues"
+    },
+    "homepage": "https://github.com/angelxmoreno/class-validator-matches#readme",
+    "peerDependencies": {
+        "class-validator": "^0.12.0"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.2.12",
+        "@types/mocha": "^8.0.1",
+        "@typescript-eslint/eslint-plugin": "^3.7.1",
+        "@typescript-eslint/parser": "^3.7.1",
+        "chai": "^4.2.0",
+        "coveralls": "^3.1.0",
+        "eslint": "^7.6.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "mocha": "^8.1.0",
+        "nyc": "^15.1.0",
+        "prettier": "^2.0.5",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.7"
+    },
+    "dependencies": {
+        "class-validator": "^0.12.2",
+        "source-map-support": "^0.5.19"
+    }
 }

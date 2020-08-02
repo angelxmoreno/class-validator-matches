@@ -11,7 +11,7 @@ const anyClassValueExtractor = (targetObj: any, constraints: any[]) => {
     return targetObj[targetProp];
 };
 
-export const matchFailMessage = (property: string, targetProp: string) =>
+export const matchFailMessage = (property: string, targetProp: string): string =>
     `The property "${property}" does not match the property "${targetProp}"`;
 
 @ValidatorConstraint({ async: false })
