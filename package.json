@@ -1,6 +1,6 @@
 {
   "name": "class-validator-matches",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Matches decorator for class-validator",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
