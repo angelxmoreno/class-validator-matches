@@ -1,5 +1,8 @@
 # class-validator-matches
 Matches decorator for class-validator
+
+[![Build Status](https://travis-ci.org/angelxmoreno/class-validator-matches.svg?branch=master)](https://travis-ci.org/angelxmoreno/class-validator-matches)
+[![Coverage Status](https://coveralls.io/repos/github/angelxmoreno/class-validator-matches/badge.svg)](https://coveralls.io/github/angelxmoreno/class-validator-matches)
 ## Installation 
 ### Yarn
 ```sh
