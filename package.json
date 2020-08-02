@@ -4,6 +4,7 @@
   "description": "Matches decorator for class-validator",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
