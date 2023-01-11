@@ -40,7 +40,7 @@
         "typescript": "^3.9.7"
     },
     "dependencies": {
-        "class-validator": "^0.12.2",
+        "class-validator": "^0.14.0",
         "source-map-support": "^0.5.19"
     }
 }
